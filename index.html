@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <link rel="icon" type="image/png" sizes="62x62" href="dee.png">    
+    <title>DarkFish · AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Marked for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Highlight.js for syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="Stye.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-left">
+            <div class="sidebar-toggle nav-btn" id="newChatBtn" title="DarkFish">
+                 <img src="dee.png" alt="">
+            </div>
+            <div class="nav-btn" id="newChatAlt" title="New chat">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Chat messages area -->
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-content" id="chatDisplay">
+                <!-- Messages will appear here -->
+            </div>
+            
+            <!-- Logo Section (visible initially) -->
+            <div class="logo-section" id="logoSection">
+                <div class="logo-wrapper">
+                    <img src="dee.png" alt="DeepSeek" class="custom-logo">
+                </div>
+                <h1 class="logo-text">What can I do for you?</h1>
+            </div>
+        </div>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <div class="input-container">
+                <div class="input-card">
+                    <textarea id="userInput" placeholder="Ask Anything" rows="1"></textarea>
+                    
+                    <div class="input-footer">
+                        <div class="pill-group">
+                            <div class="pill active" id="thinkPill">
+                                <i class="fa-solid fa-microchip"></i>
+                                <span>DeepThink (R1)</span>
+                            </div>
+                            <div class="pill" id="searchPill">
+                                <i class="fa-solid fa-globe"></i>
+                                <span>Search</span>
+                            </div>
+                        </div>
+                        
+                        <div class="action-group">
+                            <!-- Dynamic button: Send or Stop -->
+                            <div class="action-button" id="sendStopBtn">
+                                <i class="fa-solid fa-arrow-up" id="buttonIcon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
