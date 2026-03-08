@@ -1,5 +1,5 @@
        // Configuration
-        const GROQ_API_KEY = "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";
+        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";
         
         // DOM Elements
         const textarea = document.getElementById('userInput');
@@ -413,4 +413,5 @@
 
         // Initialize
         resizeTextarea();
+
         scrollToBottom();
