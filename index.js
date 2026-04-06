@@ -1,5 +1,5 @@
 // Configuration
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = "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";
         
 // DOM Elements
 const textarea = document.getElementById('userInput');
